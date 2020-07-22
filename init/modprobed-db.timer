@@ -3,4 +3,8 @@ Description=Check for new modules
 PartOf=modprobed-db.service
 
 [Timer]
+OnBootSec=1h
 OnUnitActiveSec=6h
+
+[Install]
+WantedBy=timers.target
